@@ -1,0 +1,21 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+settings:
+    bootstrap: _bootstrap.php
+    colors: екгу
+    memory_limit: 1024M
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+modules:
+    config:
+        Db:
+            dsn: 'pgsql:host=localhost;dbname=grnrbt_censored_test'
+            user: 'grnrbt_censored_test'
+            password: 'pass'
+            dump: tests/_data/dump.sql

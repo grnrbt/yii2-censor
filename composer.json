@@ -1,0 +1,38 @@
+{
+  "name": "grnrbt/yii2-censor",
+  "description": "Yii2 validation rule and filter for text censoring.",
+  "version":"0.1.0",
+  "keywords": [
+    "yii2",
+    "validation",
+    "filter",
+    "censor"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/grnrbt/yii2-materialized-path-postgres-array/issues",
+    "source": "https://github.com/grnrbt/yii2-materialized-path-postgres-array"
+  },
+  "authors": [
+    {
+      "name": "Viktor Pikaev",
+      "email": "viktor@greenrabbit.ru",
+      "homepage": "http://greenrabbit.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6",
+    "yiisoft/yii2": "~2.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-codeception": "*",
+    "codeception/codeception": "^2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "grnrbt\\yii2\\censor\\": "src/"
+    }
+  }
+}
